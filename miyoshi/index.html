@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title>洗濯物乾かし隊</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="sample.css" type="text/css">
+  </head>
+  
+  <script type="module" src="pc.js"></script>
+  
+  <body>
+    <h1 class="text__bound">洗濯物乾かし隊</h1>
+
+    <div class="message" id="message">---</div>
+
+    <hr>
+
+    <h3>現在の洗濯物の水分量を計測( ..)φメモメモ</h3>
+    <input class="button" type="button" onclick="getData()" value="★更新(水分量)★"></input>
+    <p> </p>
+    <table  border="1">
+      <tr><th>水分量</th></tr>
+      <tr><td id="Wat">-</td></tr>
+    </table>
+    <p> </p>
+    <div class="message" id="messageDate">---</div>
+    <div class="message" id="messageDiv">---</div>
+    <p> </p>
+
+    <hr>
+
+    <p> </p>
+    <h3>現在の天気を計測( ..)φメモメモ</h3>
+    <input class="button" type="button" onclick="getWeather()" value="★更新(天気)★"></input>
+    <p> </p>
+    <table  border="1">
+      <tr><th>温度[℃]</th><th>湿度[%]</th><th>照度</th></tr>
+      <tr><td id="Tem">-</td><td id="Hum">-</td><td id="Lum">-</td></tr>
+    </table>
+    <p> </p>
+
+    <hr>
+
+    <p> </p>
+    <h3>現在の野焼き状況( ..)φメモメモ</h3>
+    <input class="button" type="button" onclick="getNoyaki()" value="★更新(野焼き)★"></input>
+    <p> </p>
+    <table  border="1">
+      <tr><th>野焼き</th></tr>
+      <tr><td id="Noy">-</td></tr>
+    </table>
+    <p> </p>
+
+    <hr>
+
+    <p> </p>
+    <h3>現在の洗濯物状況( ..)φメモメモ</h3>
+    <div class="button">
+      <input class="button" type="button" onclick="takeLaundry()" value="★取り込む★"></input>
+      <input class="button" type="button" onclick="hangLaundry()" value="★干す★"></input>
+    </div>
+    <p> </p>
+    <div class="message" id="messageLaundry">---</div>
+    <p> </p>
+    
+    <hr>
+
+    <p> </p>
+    <h3>【動画】</h3>
+    <div class="movie">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ai8IXNhVdaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p> </p>
+
+    <hr>
+
+    <p> </p>
+
+  </body>
+
+</html>
